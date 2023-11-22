@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:srcCompat="@mipmap/logo"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp">
+            <EditText
+                android:id="@+id/eTuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="USUARIO"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:text="adso2617684@sena.edu.co"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeWidth="0dp"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/eTpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="CONTRASEÑA"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:text="Adso2617684"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/chbGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Recordarme" />
+
+        <android.widget.Button
+            android:id="@+id/btnLog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@color/verde_app"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Iniciar"/>
+
+        <android.widget.Button
+            android:id="@+id/btnReg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Registrarse"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/verde_app"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtOlvido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:text="@string/olvido"
+            android:clickable="true"
+            android:textColor="@drawable/txtolvido"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@mipmap/sena" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
